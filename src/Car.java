@@ -1,11 +1,12 @@
 
 
 public abstract class Car {
-    public String Status;
     public int max;
-    public int cargo;
-    public abstract int Load(int cargo);
-    public abstract int UnLoad();
-    public abstract String Status();
+    public int newWeightCargo;
+    public abstract int loadTheCar(int newWeightCargo);
+    public abstract int unloadTheCar(int newWeightCargo);
+    enum Status {
+        Overloaded, Empty, Working
+    };
 
 }
