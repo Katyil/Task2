@@ -1,32 +1,36 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+
 
 public class Station {
-    public static void main(String[] args) {
-        String KIA = new String("KIA");
-        String Renault = new String("Renault");
-        String Matiz = new String("Matiz");
-        String Lada_granta = new String("Lada_granta");
-        ArrayList<String> Car = new ArrayList<>(Arrays.asList(KIA, Renault, Matiz, Lada_granta));
-        System.out.println(Car);
+    ArrayList<CargoCar> cargoCars = new ArrayList<>();
+    ArrayList<PassengerCar> passengerCars = new ArrayList<>();
 
-
-    }
-   // ArrayList<PassengerCar> passengerCars = new ArrayList<>();
-
-  /*  public  void setCargoCars (String name){
+    public void setCargoCars(String name) {
         cargoCars.add(new CargoCar(name));
     }
-    public  void setPassengerCars(String name){
+
+    public void setPassengerCars(String name) {
         passengerCars.add(new PassengerCar(name));
     }
 
-    public ArrayList<CargoCar> getCargoCars() {
-        return cargoCars;
+    public String[] getCargoCars() {
+        String[] str = new String[cargoCars.size()];
+        for (int i = 0; i < cargoCars.size(); i++) {
+            String nameCar = cargoCars.get(i).getName();
+            str[i] = nameCar;
+            System.out.println(nameCar);
+        }
+        return str;
     }
 
-    public ArrayList<PassengerCar> getPassengerCars() {
-        return passengerCars;
-    }*/
+    public String[] getPassengerCars() {
+        String[] str1 = new String[passengerCars.size()];
+        for (int i = 0; i < passengerCars.size(); i++) {
+            String nameCar = passengerCars.get(i).getName();
+            str1[i] = nameCar;
+            System.out.println(nameCar);
+        }
+        return str1;
+
+    }
 }

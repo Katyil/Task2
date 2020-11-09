@@ -1,12 +1,13 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class Main {
-
-    private static Object Car;
-
     public static void main(String[] args) {
-
-
+        Station st = new Station();
+        st.setPassengerCars("Tesla");
+        st.setPassengerCars("KIA");
+        st.setCargoCars("Kamaz");
+        st.setCargoCars("Ural");
+        st.getCargoCars();
+        st.getPassengerCars();
     }
 }

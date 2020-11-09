@@ -14,6 +14,9 @@ public class CargoCar extends Car {
         public CargoCar(String name){
             this.name = name;
     }
+    public String getName(){
+        return this.name;
+    }
         public Status Status() {
             Status massCar;
                 if(weight > max) {
